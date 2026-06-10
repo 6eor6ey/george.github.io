@@ -1,31 +1,91 @@
-<section id="portfolio">
-    <h2>My Projects</h2>
-    
-    <div class="dashboard-grid">
-        
-        <div class="card">
-            <h3>Personal CV & Portfolio</h3>
-            <p>My professional landing page and full career resume.</p>
-            <a href="https://6eor6ey.github.io/personal-portfolio/" class="btn">View Live</a>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding-top: 30px;
+        }
 
-        <div class="card">
-            <h3>Meme Generator App</h3>
-            <p>Dynamic image manipulation tool using Vanilla JS.</p>
-            <a href="https://6eor6ey.github.io/meme-generator/" class="btn">View Live</a>
-        </div>
+        .card {
+            background: hsl(240, 3%, 12%);
+            padding: 25px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
 
-        <div class="card">
-            <h3>Caesar Cipher</h3>
-            <p>Cryptography utility for encoding/decoding text strings.</p>
-            <a href="https://6eor6ey.github.io/caesar-cipher/" class="btn">View Live</a>
-        </div>
+        .card h3 { margin-bottom: 10px; }
+        .card p { margin-bottom: 20px; color: #aaa; }
 
-        <div class="card">
-            <h3>Jeopardy! Trivia</h3>
-            <p>Asynchronous app consuming public trivia APIs.</p>
-            <a href="https://6eor6ey.github.io/jeopardy/" class="btn">View Live</a>
-        </div>
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: hsl(205, 74%, 31%);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+            transition: background 0.3s;
+        }
 
-    </div>
-</section>
+        .btn:hover { background: hsl(205, 74%, 40%); }
+    </style>
+</head>
+<body>
+
+    <header class="cv-header">
+        <div class="header-center">
+            <h1>Software Portfolio</h1>
+            <p>Welcome to my professional development dashboard</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="portfolio">
+            <h2>My Projects</h2>
+            <div class="dashboard-grid">
+                
+                <div class="card">
+                    <h3>Personal CV & Portfolio</h3>
+                    <p>My professional landing page and full career resume.</p>
+                    <a href="https://6eor6ey.github.io/personal-portfolio/" class="btn">View Live</a>
+                </div>
+
+                <div class="card">
+                    <h3>Meme Generator App</h3>
+                    <p>Dynamic image manipulation tool using Vanilla JS.</p>
+                    <a href="https://6eor6ey.github.io/meme-generator/" class="btn">View Live</a>
+                </div>
+
+                <div class="card">
+                    <h3>Caesar Cipher</h3>
+                    <p>Cryptography utility for encoding/decoding text strings.</p>
+                    <a href="https://6eor6ey.github.io/caesar-cipher/" class="btn">View Live</a>
+                </div>
+
+                <div class="card">
+                    <h3>Jeopardy! Trivia</h3>
+                    <p>Asynchronous app consuming public trivia APIs.</p>
+                    <a href="https://6eor6ey.github.io/jeopardy/" class="btn">View Live</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer style="margin-top: 50px; text-align: center; border-top: 1px solid #333; padding-top: 20px;">
+        <p>&copy; 2026 Developer Portfolio</p>
+    </footer>
+
+</body>
+</html>

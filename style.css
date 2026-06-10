@@ -18,7 +18,7 @@
     cursor: pointer;
 }
 
-card:hover {
+.card:hover {
     background: hsl(240, 3%, 18%);
     border-color: hsl(205, 74%, 31%);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);

@@ -1,8 +1,9 @@
+/* Dashboard Grid */
 .dashboard-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .card {
@@ -15,9 +16,15 @@
     justify-content: space-between;
 }
 
-.card .btn {
+.card h3 { 
+    margin-bottom: 10px; 
+    color: hsl(205, 74%, 31%); 
+    font-size: 1.25rem;
+}
+.card p { margin-bottom: 20px; color: #aaa; }
+
+.btn {
     display: inline-block;
-    margin-top: 15px;
     padding: 10px 20px;
     background: hsl(205, 74%, 31%);
     color: white;
@@ -27,6 +34,4 @@
     transition: background 0.3s;
 }
 
-.card .btn:hover {
-    background: hsl(205, 74%, 40%);
-}
+.btn:hover { background: hsl(205, 74%, 40%); }
